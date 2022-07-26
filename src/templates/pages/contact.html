@@ -1,0 +1,72 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="sect__contact">
+				<div class="container">
+
+					<div class="contact blur-block b-radius">
+						<h1 class="icon-title">
+							<span class="icon-title__ic" style="background-image: url('img/icons/svg/user.svg');"></span>
+							<span class="icon-title__text">Contact us</span>
+						</h1>
+
+						<div class="form-wrapper">
+							<form class="form">
+								<div class="row row-nowrap form-groups__row">
+									<fieldset class="form-groups__col col-w-50">
+										<div class="form-group">
+											<input type="text" class="form-input js-required-input is-error" name="name">
+											<span class="form-input-placeholder">Your name <span>*</span></span>
+										</div>
+										<div class="form-group">
+											<input type="email" class="form-input js-required-input" name="email">
+											<span class="form-input-placeholder">E-mail <span>*</span></span>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-input" name="exchange-id">
+											<span class="form-input-placeholder">Exchange ID</span>
+										</div>
+									</fieldset>
+									<fieldset class="form-groups__col col-w-50">
+										<div class="form-group form-group-full">
+											<textarea name="message"class="form-input js-required-input form-textarea"></textarea>
+											<span class="form-input-placeholder">Message <span>*</span></span>
+										</div>
+									</fieldset>
+								</div>
+								<button class="btn" type="submit">Send</button>
+							</form>
+						</div>
+
+					</div>
+
+
+					{% include '../parts/sections/partners.html' %}
+				</div>
+				<!-- //container -->
+			</section>
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

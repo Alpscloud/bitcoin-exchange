@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<title>Project name</title>
+	<title>Bitcoin Exchange</title>
 
 	<!-- Meta tags -->
 	<meta charset="UTF-8">
@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="author" content="Serhii 'winde' Kuptsov">
 	
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -24,8 +23,6 @@
 	<meta name="msapplication-navbutton-color" content="#000000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
-	<!-- All libs styles -->
-<!-- 	<link rel="stylesheet" href="css/libs.min.css"> -->
 	<!-- Main file with styles -->
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -43,17 +40,27 @@
 		<!-- Header -->
 		<header class="header">
 	<div class="container">
-		<div class="row align-vertical-center header__row">
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<a href="index.html" class="logo">
+				Logo
+			</a>
 			<!-- NAV -->
-			<nav class="nav">
-	<ul class="nav__list">
-		<li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
+			<nav class="nav js-nav">
+	<ul class="nav-list">
+		<li class="nav-item"><a href="index.html" class="nav-link is-active">Main</a></li>
+		<li class="nav-item"><a href="rules.html" class="nav-link">Website Rules</a></li>
+		<li class="nav-item"><a href="reviews.html" class="nav-link">Testimonials</a></li>
+		<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	</ul>
 </nav>
 			<!-- //NAV -->
+
+			<!-- Mobile menu btn -->
+			<button type="button" class="btn-hamburger js-open-mobile-menu-btn">
+				<span></span>
+				<span></span>
+			</button>
+			<!-- //Mobile menu btn -->
 		</div>
 	</div>
 
@@ -62,21 +69,481 @@
 
 		<!-- Main -->
 		<main class="main">
-			<div class="content">
-				<ol>
-					<li>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текст приставка взобравшись предупредила продолжил, путь заманивший скатился до правилами маленькая несколько, по всей бросил, всеми силуэт курсивных семь даль. Первую!</li>
-					<li>Подзаголовок страну которое предупредила путь над диких силуэт лучше живет букв то, использовало если своих ее lorem приставка послушавшись строчка толку свое дорогу образ переулка безопасную. Свое курсивных, приставка силуэт!</li>
-					<li>Заманивший меня ты продолжил вопрос своего океана. Переписывается скатился, они ведущими, заглавных семь моей. Всеми алфавит инициал все маленький подпоясал правилами пустился, пояс использовало, рыбного сих предупредила взгляд страну однажды.</li>
-					<li>Ipsum все коварных буквоград, путь страну, щеке его мир переписали страна составитель, раз вершину жаренные по всей семантика знаках. Грустный его переулка, большого, необходимыми своих буквоград собрал наш деревни маленькая о.</li>
-					<li>Дороге заглавных силуэт не журчит живет языкового. Грамматики маленькая несколько гор знаках океана, необходимыми она заманивший по всей одна, однажды ручеек своих запятых вскоре первую над мир пор безопасную города жизни.</li>
-					<li>Свою коварный рукопись силуэт пустился оксмокс лучше предложения, алфавит залетают буквоград агенство, вопроса запятой языкового подпоясал если, текстами подзаголовок. Свое, которой проектах правилами мир одна! Последний, имени, жизни. От всех, рекламных.</li>
-					<li>Одна агенство живет там ручеек своих журчит инициал щеке рекламных скатился первую ты подзаголовок дороге коварный страна он дал все алфавит, свой? Приставка инициал до, речью. Страна свой одна, себя.</li>
-					<li>Переулка курсивных даль однажды рекламных обеспечивает букв прямо за продолжил последний его предупредила, вскоре речью, назад он составитель живет одна! Алфавит взобравшись напоивший щеке на берегу! Бросил, путь, сбить! Взобравшись, вопроса.</li>
-					<li>Себя меня всемогущая языкового имени грустный семантика ему переписывается парадигматическая свой точках строчка диких продолжил она назад речью повстречался его на берегу несколько, своих, пор бросил, ipsum букв рыбного буквоград! Ручеек.</li>
-					<li>Деревни его большой подпоясал эта продолжил за страна образ буквенных, пояс путь, грустный то мир толку единственное рыбными если имеет. Страну текстами точках заголовок приставка рыбными сих до повстречался запятой.</li>
-				</ol>
+			<section class="sect__main-currencies">
+				<div class="container">
+					<div class="main-currencies__row row row-nowrap">
+						<div class="main-currencies__col">
+							<div class="main-currencies__heading">
+								<h2 class="block-title">You are giving</h2>
+
+								<svg class="hidden-pre-mobile" width="63" height="11" viewBox="0 0 63 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 5.29999H61.1663" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+									<path d="M54.9913 1.02628L61.1662 5.29999" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+									<path d="M61.1662 5.29999L54.9913 9.5737" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+								</svg>
+
+							</div>
+
+							<div class="main-currencies b-radius">
+
+								<div class="main-currencies__list">
+									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>									<div class="main-currency">
+	<div class="main-currency__information">
+		<div class="main-currency__logo">
+			<img src="img/bitcoin.svg" alt="">
+		</div>
+		<div class="main-currency__titles">
+			<h3 class="main-currency__abbr">BTC</h3>
+			<p class="main-currency__title">Decentraland</p>
+		</div>
+	</div>
+</div>								</div>
+							</div>
+
+						</div>
+						<!-- //main currencies -->
+
+						<div class="main-currencies-exchange__col">
+							<div class="main-currencies-exchange">
+
+								<div class="main-currencies__heading row-gutters">
+									<h2 class="block-title col-gutters">You get</h2>
+									<p class="block-title col-gutters hidden-pre-mobile">Rate</p>
+									<p class="block-title col-gutters hidden-pre-mobile">Reserve</p>
+								</div>
+
+								<div class="main-currencies-exchange__list blur-block b-radius">
+									
+									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
 			</div>
-		</main>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>									<div class="main-currency main-currency-exchange">
+	<div class="main-currency__row row align-horisontal-between align-vertical-center row-nowrap row-gutters">
+		<div class="main-currency__information col-gutters">
+			<div class="main-currency__logo">
+				<img src="img/bitcoin.svg" alt="">
+			</div>
+			<div class="main-currency__titles">
+				<h3 class="main-currency__abbr">BTC</h3>
+				<p class="main-currency__title">Decentraland</p>
+			</div>
+		</div>
+		<div class="main-currency__rate col-gutters hidden-pre-mobile">
+			<p>1 - 23769.65</p>
+		</div>
+		<div class="main-currency__reserve col-gutters hidden-pre-mobile">
+			<p>7474499.89</p>
+
+			<div class="currency-bell">
+				<svg  viewBox="0 0 16 19"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 15.2H15.2C15.64 15.2 16 14.84 16 14.4V12.696C16 12.32 15.728 12.024 15.368 11.92C13.52 11.392 13.16 9.192 12.8 4.8C12.6 2.408 11.2 0 8 0C4.8 0 3.4 2.408 3.2 4.8C2.84 9.192 2.472 11.392 0.632 11.92C0.272 12.024 0 12.32 0 12.696V14.4C0 14.84 0.36 15.2 0.8 15.2H8Z"/>
+					<path d="M8.00002 18.4C7.12002 18.4 6.40002 17.68 6.40002 16.8V15.2H9.60002V16.8C9.60002 17.68 8.88002 18.4 8.00002 18.4Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="partners-wrapper">
+	<h2 class="block-title">Our Partners</h2>
+
+	<div class="partners b-radius">
+		<div class="row partners__row align-vertical-center align-horisontal-start row-gutters">
+			<div class="partner"><img src="img/partners/1.png" alt=""></div>
+			<div class="partner"><img src="img/partners/2.png" alt=""></div>
+			<div class="partner"><img src="img/partners/3.png" alt=""></div>
+			<div class="partner"><img src="img/partners/4.png" alt=""></div>
+			<div class="partner"><img src="img/partners/5.png" alt=""></div>
+			<div class="partner"><img src="img/partners/6.png" alt=""></div>
+		</div>
+	</div>
+</div>				</div>
+				<!-- //container -->
+			</section>
+
+			<section class="sect__reviews">
+	<div class="container">
+		<div class="reviews-heading row align-horisontal-between row-nowrap align-vertical-center">
+			<h2 class="block-title">Reviews</h2>
+
+			<a href="reviews.html" class="permalink">
+				<span>Open all</span>
+				<svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 6.52008H28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M21.8979 1.76807L27.9999 6.52007" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M27.9999 6.52008L21.8979 11.2721" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+		</div>
+
+		<div class="reviews b-radius">
+			<div class="reviews__row row row-nowrap  align-horisontal-start">
+				<div class="review__wrapper col-w-25">
+					<div class="review">
+						<h3 class="review-title">prydz07</h3>
+						<div class="review-information row row-nowrap">
+							<span>20.07.2022</span>
+							<span>19:40</span>
+						</div>
+						<p>Super fast service at very convenient rates every time I use it, good job guys!</p>
+					</div>
+				</div>
+
+				<div class="review__wrapper col-w-25">
+					<div class="review">
+						<h3 class="review-title">maxon4er</h3>
+						<div class="review-information row row-nowrap">
+							<span>20.07.2022</span>
+							<span>19:40</span>
+						</div>
+						<p>все супер ! за 5 мин перевод дошел</p>
+					</div>
+				</div>
+
+				<div class="review__wrapper col-w-25">
+					<div class="review">
+						<h3 class="review-title">warhammer</h3>
+						<div class="review-information row row-nowrap">
+							<span>20.07.2022</span>
+							<span>19:40</span>
+						</div>
+						<p>все отлично . спасибо ! думал в такой поздний час не смогу обменять . отличный сервис</p>
+					</div>
+				</div>
+
+				<div class="review__wrapper col-w-25">
+					<div class="review">
+						<h3 class="review-title">servegas</h3>
+						<div class="review-information row row-nowrap">
+							<span>20.07.2022</span>
+							<span>19:40</span>
+						</div>
+						<p>Прекрасная работа. Обмен прошёл молниеносною Всем рекомендую. Команде спасибо!</p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+</section>		</main>
 		<!-- //Main -->
 
 		<!-- Footer -->
@@ -88,10 +555,6 @@
 
 	<!-- jQuery IF NEEDED-->
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!-- Google map -->
-<!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script> -->
-<!-- All libs scripts -->
-<!-- 	<script src="js/libs.min.js"></script> -->
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 </body>

@@ -1,0 +1,180 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="sect__exchange">
+				<div class="container">
+
+					<div class="exchange-wrapper">
+
+						<div class="exchange-heading b-radius">
+							<div class="exchange-heading__row row align-vertical-center row-nowrap row-gutters">
+								<div class="exchange-heading__title col-gutters">
+									<h1 class="icon-title">
+										<span class="icon-title__ic" style="background-image: url('img/icons/svg/exchange.svg');"></span>
+										<span class="icon-title__text">You make an exchange</span>
+										<svg width="29" height="12" viewBox="0 0 29 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.75198H28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M21.8979 1L27.9999 5.752" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M27.9999 5.75198L21.8979 10.504" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+									</h1>
+
+								</div>
+
+
+								<div class="exchange-heading__currencies col-gutters">
+									<div class="exchange-heading__currency form-input">
+										<span class="exchange-heading__currency-logo">
+											<img src="img/bitcoin.svg" alt="">
+										</span>
+										<div>
+											<span class="main-currency__abbr">BTC</span>
+											<span class="main-currency__title">Bitcoin</span>
+										</div>
+									</div>
+
+									<svg class="exchange-arrow" viewBox="0 0 11 14" xmlns="http://www.w3.org/2000/svg">
+										<path d="M-5.33078e-08 12.7805C-1.66049e-09 13.962 0.886378 14.3559 1.97794 13.6469L10.1851 8.2834C10.4345 8.14763 10.6401 7.95873 10.7826 7.73448C10.9252 7.51024 11 7.25802 11 7.00159C11 6.74515 10.9252 6.49294 10.7826 6.2687C10.6401 6.04445 10.4345 5.85555 10.1851 5.71978L1.97794 0.356245C0.886377 -0.359847 -6.1016e-07 0.0411692 -5.58513e-07 1.22272L-5.33078e-08 12.7805Z"/>
+									</svg>
+
+									<div class="exchange-heading__currency form-input">
+										<span class="exchange-heading__currency-logo">
+											<img src="img/bitcoin.svg" alt="">
+										</span>
+										<div>
+											<span class="main-currency__abbr">DCD</span>
+											<span class="main-currency__title">Decentraland</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="exchange blur-block b-radius">
+							<form class="exchange-form">
+								<div class="exchange-form__row row align-vertical-start row-nowrap">
+
+									<div class="exchange-form__col">
+										<div class="exchange-form__col-heading row align-vertical-center align-horisontal-between row-nowrap">
+											<h2 class="icon-title">
+												<span class="icon-title__ic" style="background-image: url('img/icons/svg/withdrawal.svg');"></span>
+												<span class="icon-title__text">Withdrawal</span>
+											</h2>
+
+											<p class="currency-rate">1 BTC = 22970.14 USDT</p>
+										</div>
+
+										<div class="form-groups">
+
+											<div class="form-group">
+												{% include '../parts/components/select.html' %}
+											</div>
+											
+											<div class="form-group">
+												<input type="text" class="form-input js-required-input is-error" name="your-account">
+												<span class="form-input-placeholder">Your account <span>*</span></span>
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-input js-required-input" name="exchange-amount">
+												<span class="form-input-placeholder">Amount <span>*</span></span>
+											</div>
+										</div>
+									</div>
+
+									<svg class="exchange-arrow" viewBox="0 0 11 14" xmlns="http://www.w3.org/2000/svg">
+										<path d="M-5.33078e-08 12.7805C-1.66049e-09 13.962 0.886378 14.3559 1.97794 13.6469L10.1851 8.2834C10.4345 8.14763 10.6401 7.95873 10.7826 7.73448C10.9252 7.51024 11 7.25802 11 7.00159C11 6.74515 10.9252 6.49294 10.7826 6.2687C10.6401 6.04445 10.4345 5.85555 10.1851 5.71978L1.97794 0.356245C0.886377 -0.359847 -6.1016e-07 0.0411692 -5.58513e-07 1.22272L-5.33078e-08 12.7805Z"/>
+									</svg>
+
+									<div class="exchange-form__col">
+										<div class="exchange-form__col-heading row align-vertical-center align-horisontal-between row-nowrap">
+											<h2 class="icon-title">
+												<span class="icon-title__ic" style="background-image: url('img/icons/svg/recive.svg');"></span>
+												<span class="icon-title__text">Receiving funds</span> 
+											</h2>
+
+											<p class="currency-rate">max.: 83687.513834 USDT</p>
+										</div>
+
+										<div class="form-groups">
+											<div class="form-group">
+												{% include '../parts/components/select.html' %}
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-input js-required-input" name="to-account">
+												<span class="form-input-placeholder">To account <span>*</span></span>
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-input js-required-input" name="recive-amount">
+												<span class="form-input-placeholder">Amount <span>*</span></span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="exchange-form__user">
+									<div class="row align-vertical-center row-nowrap align-horisontal-between">
+										<h2 class="icon-title">
+											<span class="icon-title__ic" style="background-image: url('img/icons/svg/personal.svg');"></span>
+											Personal information 
+										</h2>
+
+										<div class="exchange-form__user-fields row row-nowrap">
+											<div class="form-group">
+												<input type="email" class="form-input js-required-input" name="email">
+												<span class="form-input-placeholder form-input-placeholder-center">E-mail <span>*</span></span>
+											</div>
+
+											<div class="form-group">
+												<button class="btn btn-wide" type="submit">Exchange</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</form>
+
+							<div class="exchange-information">
+								<p>There are a few steps you need to take to make the exchange:</p>
+								<ol>
+									<li>Fill in all the fields in the form provided. Press the "Exchange" button.</li>
+									<li>Read the terms and conditions of the exchange services contract, if you accept them, tick the appropriate box and click "Create an application".</li>
+									<li>Pay for the request.  To do this you should transfer the necessary amount following the instructions on our website.</li>
+									<li>After performing these actions, the system will transfer you to the "Request status" page, where the status of your transfer will be indicated.</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+
+
+					{% include '../parts/sections/partners.html' %}
+				</div>
+				<!-- //container -->
+			</section>
+
+			{% include '../parts/sections/sect-reviews.html' %}
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+.sect__main-currencies
+	padding-bottom 55px
+
+.main-currencies
+
+	background-color $basic-black-color
+	padding 15px
+	box-shadow 0px 24px 94px rgba(0, 0, 0, 0.22)
+	&__col
+		width 100%
+		max-width 320px
+		margin-right 20px
+	&__heading
+		display flex
+		flex-wrap nowrap
+		justify-content space-between
+		align-items center
+		margin-bottom 20px
+		padding-right 60px
+		
+		.block-title
+			margin-bottom 0
+
+			
+		svg
+			display inline-block
+			margin-left 20px
+			
+
+.main-currency
+	text-transform uppercase
+	border-radius 19px
+	padding 5px
+	transition all .17s ease-in-out
+	border 1px solid transparent
+	cursor pointer
+	color $text-color
+	white-space nowrap
+	&-exchange
+		padding-right 20px
+		.main-currency__information
+			min-width 230px
+	&__information
+		display flex
+		flex-wrap nowrap
+		align-items center
+		flex 1
+	&__logo
+		flex-col-center()
+		flex none
+		width 58px
+		height 58px
+		border-radius 15px
+		background-color rgba(255, 255, 255, 0.07)
+		backdrop-filter blur(104px)
+		border $border
+		margin-right 20px
+		img
+			@extends .content-img
+			max-width 32px
+			max-height 32px
+	&__abbr
+		font-family $SemiBold
+		color inherit
+		margin-bottom 5px
+	&__title
+		text-transform none
+		color $light-text-color
+		transition color .17s ease-in-out
+		white-space nowrap
+		overflow hidden
+		text-overflow ellipsis
+		
+	&:hover,
+	&.is-active
+		background-color rgba(80, 214, 115, 0.12)
+		border-color rgba(80, 214, 115, 0.2)
+		color $secondary-color
+
+		.main-currency
+			&__title
+				color $light-secondary-color
+				
+
+.main-currencies-exchange
+	.main-currencies__heading
+		padding-right 0
+		width 100%
+		padding-right 10px
+		.block-title
+			&:nth-child(1)
+				flex 1
+				min-width 230px
+			&:nth-child(2),
+			&:nth-child(3)
+				width 100%
+				max-width 190px
+	&__col
+		flex 1
+
+		
+
+	
+.main-currency
+
+	&__reserve
+		display flex
+		flex-wrap nowrap
+		justify-content space-between
+		align-items center
+		
+	&__row
+		.main-currency__rate,
+		.main-currency__reserve
+			width 100%
+			max-width 190px
+
+		
+.currency-bell
+	width 20px
+	height 20px
+	svg
+		display block
+		width 100%
+		height 100%
+		fill $light-text-color
+		transition opacity .17s ease-in-out
+		
+
+// Partners
+.partners
+	background-color $basic-white-color
+	padding 50px
+	&-wrapper
+		margin-top 40px
+		
+.partner
+	flex-col-center()
+	width calc(100% / 6)
+	margin-bottom 20px
+	padding-left 15px
+	padding-right 15px
+	img
+		@extends .content-img
+		
+	
+.partners__row
+	margin-bottom -20px
+	
+
+// Reviews
+.reviews
+	&-heading
+		margin-bottom 20px
+		.block-title
+			margin-bottom 0
+			
+.permalink
+	display inline-flex
+	flex-wrap nowrap
+	color $text-color
+	font 14px $SemiBold
+	svg
+		flex none
+		margin-left 18px
+		transition transform .17s ease-in-out
+	&:hover
+		svg
+			transform translateX(5px)
+			
+
+.reviews
+	padding 60px
+	border $border
+	&__row
+		margin-left -25px
+		margin-right -25px
+		margin-bottom -50px
+
+.review
+	height 100%
+	&__wrapper
+		padding-left 25px
+		padding-right 25px
+		margin-bottom 50px
+		
+	&-title
+		font-family $SemiBold
+		margin-bottom 10px
+	&-information
+		color $light-text-color
+		white-space nowrap
+		margin-bottom 20px
+		span
+			display inline-block
+			margin-right 26px
+			&:last-child
+				margin-right 0
