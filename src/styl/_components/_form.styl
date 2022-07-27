@@ -98,6 +98,7 @@ div.form-input
 	margin-top 15px
 	visibility hidden
 	pointer-events none
+	padding 10px 0
 	
 	
 	
@@ -125,16 +126,21 @@ div.form-input
 				margin-top 0
 				visibility visible
 				pointer-events auto
+				
+	&-options
+		max-height calc(68px * 4)
+		overflow-y auto
+		
 			
 	&-option
 		transition background-color .17s ease-in-out
 		cursor pointer
 		padding-left 20px
 		padding-right 20px
-		&:first-child
-			border-radius 19px 19px 0 0
+		// &:first-child
+		// 	border-radius 19px 19px 0 0
 		&:last-child
-			border-radius 0 0 19px 19px
+			// border-radius 0 0 19px 19px
 			.form-select-option__inner
 				border-bottom none
 		&:hover

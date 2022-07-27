@@ -5,6 +5,8 @@
 	width 100%
 	height 100%
 	display none
+
+		
 	&__overflow
 		position absolute
 		left 0
@@ -17,7 +19,8 @@
 		box-sizing border-box
 		-webkit-overflow-scrolling touch
 		z-index 105
-		background-color rgba($popup-overlay-bg, $popup-overlay-opacity)
+		background rgba(0, 0, 0, 0.3)
+		backdrop-filter blur(20px)
 		padding 10px
 		text-align center
 		white-space nowrap
@@ -30,14 +33,74 @@
 		width 100%
 		max-width 400px
 		background-color $popup-body-bg
-		padding 20px
+		padding 26px 10px 10px
 		display inline-block
 		vertical-align middle
 		position relative
 		white-space normal
+		border-radius 19px
+		border $border
+		
+		.form-input
+			background-color $basic-white-color
+			color $basic-black-color
+			&-placeholder
+				color #ccc
+		
+	&__title
+		font 16px $SemiBold
+		color $basic-black-color
+		margin-bottom 30px
 		
 	.btn-close
 		position absolute
 		top 10px
 		right 10px
 
+.thanks
+	text-align left
+	color $basic-black-color
+	font-size 16px
+	.popup__body
+		padding-top 40px
+		
+	.icon-title,
+	p
+		padding-left 30px
+		padding-right 30px
+		text-align left
+		
+	.popup__title
+		margin-bottom 16px
+		
+	&-text
+		
+		margin-bottom 16px
+	&-notice
+		margin-bottom 70px
+		color #D6D6D6
+		
+	.icon-title
+		position relative
+		z-index 6
+		
+.thanks
+	
+	&-block
+		position relative
+		&-content__text
+			opacity 0
+			transition opacity .23s ease-in-out
+	&-loader
+		position absolute
+		z-index 5
+		top -2px
+		right -2px
+		left -2px
+		bottom -2px
+		background-color $basic-white-color
+		transition opacity .23s ease-in-out
+		&.is-loaded
+			opacity 0
+			visibility hidden
+			pointer-events none

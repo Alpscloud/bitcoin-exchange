@@ -61,7 +61,11 @@
 						</div>
 						
 						<div class="exchange blur-block b-radius">
-							<form class="exchange-form">
+							<form class="exchange-form js-form">
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="easyChange">
+								<input type="hidden" name="form_subject" value="Exchange form">
+								<!-- // Hidden inputs -->
 								<div class="exchange-form__row row align-vertical-start row-nowrap">
 
 									<div class="exchange-form__col">
@@ -79,9 +83,9 @@
 											<div class="form-group">
 												{% include '../parts/components/select.html' %}
 											</div>
-											
+
 											<div class="form-group">
-												<input type="text" class="form-input js-required-input is-error" name="your-account">
+												<input type="text" class="form-input js-required-input" name="your-account">
 												<span class="form-input-placeholder">Your account <span>*</span></span>
 											</div>
 											<div class="form-group">
@@ -166,9 +170,9 @@
 		</main>
 		<!-- //Main -->
 
-		<!-- Footer -->
-		{% include '../parts/sections/footer.html' %}
-		<!-- //Footer -->
+		<!-- Popup thanks-->
+		{% include '../parts/components/thanks.html' %}
+		<!-- //Popup thanks-->
 
 	</div>
 	<!-- //CONTENT WRAPPER -->

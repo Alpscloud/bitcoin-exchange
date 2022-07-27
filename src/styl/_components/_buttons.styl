@@ -16,7 +16,30 @@
 		
 	&-wide
 		width 100%
-	
+		
+	&-close
+		display inline-block
+		width 47px
+		height 47px
+		border-radius 15px
+		border .5px solid rgba(0,0,0,.2)
+		position relative
+		&:hover
+			border-color $accent-color
+			background-color $accent-color
+			svg
+				stroke $basic-white-color
+		svg
+			svg()
+			fill none
+			stroke $basic-black-color 
+			stroke-width 2px
+			stroke-linecap round
+			stroke-linejoin round
+			width 13px
+			height 13px
+			position absolute
+			position-center()
 		
 	
 

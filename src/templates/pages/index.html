@@ -79,9 +79,53 @@
 		</main>
 		<!-- //Main -->
 
-		<!-- Footer -->
-		{% include '../parts/sections/footer.html' %}
-		<!-- //Footer -->
+		<!-- Popup form-->
+		<div class="popup js-popup js-request-popup">
+			<div class="popup__overflow">
+				<div class="popup__body text-center">
+					<button class="btn-close js-close-popup-btn" type="button">
+						<svg  viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 11.1116L11.1116 0.999946"/>
+							<path d="M1 1L11.1116 11.1116"/>
+						</svg>
+					</button>
+					<!-- Popup content-->
+					<div class="popup__content">
+						<p class="popup__title">Reserve Request</p>
+						<form class="form js-form">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="easyChange">
+							<input type="hidden" name="form_subject" value="Reserve Request">
+							<!-- // Hidden inputs -->
+							<fieldset class="form-group">
+								<input type="text" class="form-input js-required-input" name="required-amount">
+								<span class="form-input-placeholder">Required amount <span>*</span></span>
+							</fieldset>
+
+							<fieldset class="form-group">
+								<input type="email" class="form-input js-required-input" name="email">
+								<span class="form-input-placeholder">E-mail <span>*</span></span>
+							</fieldset>
+
+							<fieldset class="form-group">
+								<textarea name="comment"class="form-input js-required-input form-textarea"></textarea>
+								<span class="form-input-placeholder">Comment <span>*</span></span>
+							</fieldset>
+
+							<button class="btn btn-wide" type="submit">Send request</button>
+						</form>
+					</div>
+					<!-- //Popup content-->
+				</div>
+			</div>
+		</div>
+		<!-- //Popup form-->
+
+		<!-- Popup thanks-->
+		{% include '../parts/components/thanks.html' %}
+		<!-- //Popup thanks-->
+
+
 
 	</div>
 	<!-- //CONTENT WRAPPER -->

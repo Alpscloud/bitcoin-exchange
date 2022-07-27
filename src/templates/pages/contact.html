@@ -20,11 +20,15 @@
 						</h1>
 
 						<div class="form-wrapper">
-							<form class="form">
+							<form class="form js-form">
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="easyChange">
+								<input type="hidden" name="form_subject" value="Contact">
+								<!-- // Hidden inputs -->
 								<div class="row row-nowrap form-groups__row">
 									<fieldset class="form-groups__col col-w-50">
 										<div class="form-group">
-											<input type="text" class="form-input js-required-input is-error" name="name">
+											<input type="text" class="form-input js-required-input " name="name">
 											<span class="form-input-placeholder">Your name <span>*</span></span>
 										</div>
 										<div class="form-group">
@@ -58,9 +62,9 @@
 		</main>
 		<!-- //Main -->
 
-		<!-- Footer -->
-		{% include '../parts/sections/footer.html' %}
-		<!-- //Footer -->
+		<!-- Popup thanks-->
+		{% include '../parts/components/thanks.html' %}
+		<!-- //Popup thanks-->
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
